@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Match match game</title>
+  <meta charset="utf-8">
+  <link rel="shortcut icon" href="images/favicon-16x16.ico">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <div class="main-wrapper">
+    <header>
+      <h1>Игра "СОВЯТА"</h1>
+    </header>
+    <main>
+
+<div class ="game-info-container">
+      <section class="rules-container">
+        <h2>Об игре!</h2>
+        <p>
+          "Совята" - классическая настольная игра на поиск пары. Игра поможет развить способность к запоминанию, внимательность и сообразительность.
+        </p>
+      </section>
+      <section class="rules-container">
+        <h2>Правила игры!</h2>
+        <p>
+          Твоя задача - открыть все карточки.
+        </p>
+        <p>
+          Щелкай по ним мышкой, запоминай, что изображено с обратной стороны и ищи пары.
+        </p>
+        <p>
+          Тебе предстоит быть внимательным, ведь запомнить, где находятся одинаковые картинки, при таком количестве элементов уже сложнее. Но мы уверены - у тебя всё получится!
+        </p>
+        <p>
+          Попробуй, найди пару!
+        </p>
+      </section>
+
+
+      <section class="game-settings-container">
+        <h2>Выбери рубашку карточек:</h2>
+        <form>
+          <div class="choose-column">
+            <label for="card-choose-one"><img src="images/card-back/card-back-side-1.png" alt="snowflake"></label>
+            <input type="radio" name="card-back" id="card-choose-one" value='snowflake' checked>
+          </div>
+          <div class="choose-column">
+            <label for="card-choose-two"><img src="images/card-back/card-back-side-2.png" alt="leaf"></label>
+            <input type="radio" name="card-back" id="card-choose-two" value='leaf'>
+          </div>
+          <div class="choose-column">
+            <label for="card-choose-three"><img src="images/card-back/card-back-side-3.png" alt="mapleleaf"></label>
+            <input type="radio" name="card-back" id="card-choose-three" value='mapleleaf'>
+          </div>
+
+          <h2>Выбери сложность игры:</h2>
+          <div class="choose-column">
+            <label for="game-difficulty-one">4 x 2</label>
+            <input type="radio" name="game-difficulty" id="game-difficulty-one" value='4' checked>
+          </div>
+          <div class="choose-column">
+            <label for="game-difficulty-two">4 x 3</label>
+            <input type="radio" name="game-difficulty" id="game-difficulty-two" value='6'>
+          </div>
+          <div class="choose-column">
+            <label for="game-difficulty-three">4 x 4</label>
+            <input type="radio" name="game-difficulty" id="game-difficulty-three" value='8'>
+          </div>
+        </form>
+        <div class="start-button-wrapper">
+          <button class="start-game-button">Начать игру!</button>
+        </div>
+      </section>
+
+      </div>
+
+      <div class="game-container">
+        <div class="game-time">
+          Время:
+          <span class="time-text"></span>
+        </div>
+        <div class="game-card-container"></div>
+        <div class="change-game-buttons">
+          <button class="quit-game-button">Выход</button>
+        </div>
+      </div>
+      <div class="game-over-container">
+        <h2 class="game-over-header">Победа! Поздравляем!</h2>
+        <div class="time-container">
+          Результат:
+          <span class="time"></span> с
+        </div>
+        <div class="quit-button-wrapper">
+          <button class="quit-game-button">Выход</button>
+        </div>
+
+      </div>
+    </main>
+
+  </div>
+
+  <script src="js/polyfills.js"></script>
+  <script src="js/game.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
